@@ -7,7 +7,7 @@
 
     <style>
         /* * -----------------------------------------------------
-         * STYLING (CSS) - VERSI RESPONSIVE
+         * STYLING (CSS) - VERSI RESPONSIVE FINAL
          * -----------------------------------------------------
          */
         body {
@@ -30,7 +30,7 @@
             position: relative;
         }
 
-        /* LOGO PESANTREN (POJOK KIRI ATAS) */
+        /* LOGO PESANTREN (POJOK KIRI ATAS - Desktop View) */
         .logo {
             position: absolute;
             left: 5%; 
@@ -39,16 +39,15 @@
         }
         
         .logo img {
-            height: 80px; /* Ukuran logo disesuaikan */
+            height: 80px; 
             width: auto;
-            border-radius: 50%; /* Ditambahkan untuk tampilan lebih baik */
-            /* Kode 'b' yang error telah dihapus/diganti */
+            border-radius: 50%;
         }
 
         .header-text {
             text-align: center;
             margin-left: 10px;
-            padding: 0 100px; /* Padding horizontal untuk membatasi teks */
+            padding: 0 100px;
         }
 
         .header h1 {
@@ -69,7 +68,7 @@
             margin: 0;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; /* Penting untuk responsif */
+            flex-wrap: wrap; 
         }
 
         .nav li a {
@@ -104,7 +103,7 @@
             border-top: 4px solid #ffaa00;
         }
 
-        /* JADWAL & AGENDA KEGIATAN (FOKUS UTAMA) */
+        /* JADWAL & AGENDA KEGIATAN */
         .agenda-list {
             background-color: white;
             padding: 25px;
@@ -189,36 +188,49 @@
         }
 
         /* * -----------------------------------------------------
-         * MEDIA QUERIES (RESPONSIVITAS MOBILE)
+         * MEDIA QUERIES (RESPONSIVITAS MOBILE/ANDROID)
          * -----------------------------------------------------
          */
 
-        @media (max-width: 768px) {
-            /* HEADER: Logo dan Teks ditumpuk di layar kecil */
+        @media (max-width: 600px) {
+            /* HEADER: Logo di kiri atas, Teks di kanan */
             .header {
-                flex-direction: column;
-                padding: 15px 10px;
+                flex-direction: row; 
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 10px;
+                height: auto; 
             }
 
             .logo {
                 position: relative;
-                left: auto;
-                top: auto;
+                left: 0;
+                top: 0;
                 transform: none;
-                margin-bottom: 10px;
+                flex-shrink: 0; 
+                margin-right: 10px;
             }
             
             .logo img {
-                height: 60px;
+                height: 60px; 
+                width: 60px;
             }
 
             .header-text {
-                padding: 0 10px;
+                text-align: left;
+                padding: 0;
                 margin-left: 0;
             }
 
             .header h1 {
-                font-size: 1.5em;
+                font-size: 1.2em; 
+                line-height: 1.2;
+                margin-bottom: 5px;
+            }
+            
+            .header p {
+                font-size: 0.8em;
+                margin-top: 0;
             }
             
             /* NAVIGATION: Menu dibuat tumpuk di layar kecil */
@@ -227,7 +239,8 @@
             }
             
             .nav li a {
-                padding: 10px;
+                padding: 8px 10px;
+                font-size: 0.9em;
             }
 
             /* AGENDA ITEM: Foto dan teks dibuat tumpuk di HP */
@@ -248,7 +261,7 @@
             }
             
             .agenda-content h4 {
-                font-size: 1.1em;
+                font-size: 1.05em;
             }
         }
     </style>
@@ -312,5 +325,4 @@
     </footer>
 
 </body>
-
 </html>
