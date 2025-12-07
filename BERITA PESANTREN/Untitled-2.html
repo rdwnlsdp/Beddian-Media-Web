@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kegiatan Santri — Pesantren Salafiyah Al-Utsmani</title>
+  <meta name="description" content="Halaman demo: ringkasan kegiatan harian dan program pembelajaran santri di pesantren.">
+  <style>
+    /* Reset */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.6;color:#111;background:#f7f7fb}
+    .container{max-width:1000px;margin:20px auto;padding:20px}
+
+    header{display:flex;align-items:center;gap:16px;padding:14px 0}
+    .logo{font-weight:800;color:#0b5fff;font-size:20px}
+    .tag{color:#666}
+
+    .hero{background:#fff;border-radius:10px;padding:18px;margin-top:12px;box-shadow:0 6px 18px rgba(12,22,64,0.06)}
+    .hero h1{font-size:24px;margin-bottom:6px}
+    .hero p{color:#444}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+
+    .card{background:#fff;padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(12,22,64,0.04)}
+    .section-title{font-size:18px;margin-bottom:10px;color:#0b5fff}
+
+    /* Jadwal */
+    .jadwal{list-style:none}
+    .jadwal li{padding:10px 12px;border-left:4px solid #e9eefc;margin-bottom:10px;border-radius:6px;background:#fbfdff}
+    .time{font-weight:700;color:#0b5fff;margin-right:10px}
+    .activity{color:#222}
+
+    /* Program mingguan */
+    .programs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+    .program{padding:10px;border-radius:8px;background:linear-gradient(180deg,#ffffff,#f8fbff);border:1px solid #edf4ff}
+    .program h4{margin-bottom:6px}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .gallery img{width:100%;height:96px;object-fit:cover;border-radius:6px}
+
+    /* Sidebar */
+    aside .info{margin-bottom:12px}
+    .cta{display:block;text-align:center;padding:10px;border-radius:8px;background:#0b5fff;color:#fff;text-decoration:none}
+
+    footer{margin-top:18px;text-align:center;color:#666;font-size:13px}
+
+    @media(max-width:900px){
+      .grid{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .programs{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Pesantren Salafiyah Al-Utsmani</div>
+      <div class="tag">— Kegiatan Santri &amp; Kegiatan Pembelajaran</div>
+    </header>
+
+    <main>
+      <section class="hero card">
+        <h1>Kegiatan Harian Santri</h1>
+        <p>Halaman ini merangkum rutinitas, program belajar, dan kegiatan ekstrakurikuler santri di Pesantren Al-Ilmi. Gunakan halaman ini sebagai panduan untuk orang tua, wali, atau pengurus.</p>
+      </section>
+
+      <div class="grid">
+        <div>
+          <section class="card" aria-labelledby="jadwal-title">
+            <h2 id="jadwal-title" class="section-title">Jadwal Harian</h2>
+            <ul class="jadwal" id="jadwal-list">
+              <li><span class="time">04:00</span> <span class="activity">Bangun &amp; Sholat Tahajud &amp; Sholat Subuh</span></li>
+              <li><span class="time">05:00</span> <span class="activity">Belajar Mengaji (Al-Qur'an)</span></li>
+              <li><span class="time">06:30</span> <span class="activity">Pengajian Pagi (Sorogan Kiyai)</span></li>
+              <li><span class="time">08:30 - 11:30 </span> <span class="activity">Sekolah Madrasah</span></li>
+              <li><span class="time">12:00</span> <span class="activity">Sholat Dzuhur</span></li>
+              <li><span class="time">13:00 - 15:30</span> <span class="activity">Sekolah Formal &amp; Makan Siang</span></li>
+              <li><span class="time">16:00</span> <span class="activity">Sholat Asyar &amp; Rotibul Hadad</span></li>
+              <li><span class="time">17:00 </span> <span class="activity">Sholat Maghrib </span></li>
+              <li><span class="time">17:30</span> <span class="activity">Ngaji Manghrib (Al-Qur'an)</span></li>
+                   <li><span class="time">18:00 </span> <span class="activity">Sholat Isya' </span></li>
+              <li><span class="time">20:30 </span> <span class="activity">Ngaji Kitab </span></li>
+              <li><span class="time">21:30 - 22:30</span> <span class="activity">Jam Belajar</span></li>
+             </li><span class="time">23:00</span> <span class="activity">Istirahat Bagi Yang Tidak Punya Kegiatan</span></li>
+              <li><span class="time">00:00</span> <span class="activity">Seluruh Santri Wajib Istirahat'</span></li>
+             
+        
+        
+        </section>
+
+
+          <div class="card info">
+            <h3 class="section-title">Testimoni</h3>
+            <blockquote style="font-style:italic;color:#333">"Lingkungan belajar yang disiplin dan hangat — anak kami berkembang pesat."<br><small>— Orang Tua Santri</small></blockquote>
+          </div>
+        </aside>
+      </div>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Pesantren Al-Ilmi — Semua konten hanya contoh. Silakan sesuaikan.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Contoh: Tambah item jadwal dinamis (demonstrasi)
+    (function(){
+      const list = document.getElementById('jadwal-list');
+      const extra = document.createElement('li');
+      extra.innerHTML = '<span class="time">15:30</span> <span class="activity">Kajian Tematik / Forum Diskusi</span>';
+      list.appendChild(extra);
+    })();
+  </script>
+</body>
+</html>
