@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | Media Informasi Resmi Pesantren Salafiyah Al-Utsmani</title>
+
+    <style>
+        /* * -----------------------------------------------------
+         * STYLING (CSS)
+         * -----------------------------------------------------
+         */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f8; 
+            color: #333;
+        }
+
+        /* HEADER */
+        .header {
+            background-color: #006400; /* Hijau Tua */
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex; /* Menggunakan flexbox untuk logo dan teks */
+            align-items: center;
+            justify-content: center;
+            position: relative; /* Penting untuk memposisikan logo */
+        }
+
+        /* LOGO PESANTREN (POJOK KIRI ATAS) */
+        .logo {
+            position: absolute;
+            left: 5%; 
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .logo img {
+            height: 100px; /* Ukuran logo */
+            width: auto;
+            b
+        }
+
+        .header-text {
+            text-align: center;
+            margin-left: 10px; /* Memberi ruang dari logo */
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        
+        /* NAVIGATION */
+        .nav {
+            background-color: #004d4d;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px; 
+            transition: background-color 0.3s;
+            font-weight: bold;
+            font-size: 0.95em;
+        }
+
+        .nav li a:hover {
+            background-color: #008080;
+        }
+
+        /* MAIN CONTENT LAYOUT */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        /* AREA KUSTOMISASI BERANDA */
+        .custom-section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            border-top: 4px solid #ffaa00;
+        }
+
+        /* JADWAL & AGENDA KEGIATAN (FOKUS UTAMA) */
+        .agenda-list {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ffaa00; 
+        }
+
+        .agenda-list h2 {
+            color: #006400;
+            border-bottom: 2px solid #ffaa00;
+            padding-bottom: 10px;
+        }
+
+        .agenda-item {
+            display: flex; /* Menggunakan flexbox untuk tata letak foto-teks */
+            border-bottom: 1px dashed #ccc;
+            padding: 15px 0;
+            align-items: center;
+        }
+
+        .agenda-item:last-child {
+            border-bottom: none;
+        }
+
+        /* FOTO KEGIATAN */
+        .agenda-photo {
+            flex-shrink: 0; /* Mencegah foto mengecil */
+            margin-right: 15px;
+        }
+
+        .agenda-photo img {
+            width: 100px; /* Ukuran foto berita */
+            height: 70px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* KONTEN AGENDA */
+        .agenda-content {
+            flex-grow: 1;
+        }
+
+        .agenda-content h4 {
+            margin: 0 0 5px 0;
+            color: #004d4d;
+        }
+        
+        .agenda-meta {
+            font-size: 0.9em;
+            color: #888;
+        }
+        
+        .agenda-meta span {
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        
+        .button {
+            background-color: #ffaa00; 
+            color: #006400; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            display: inline-block; 
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #e09500;
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        
+        <div class="logo">
+            <img src="img\1.webp" alt="Logo Pesantren Salafiyah Al Utsmani">
+        </div>
+        
+        <div class="header-text">
+            <h1>MEDIA INFORMASI PESANTREN SALAFIYAH Al-Utsmani</h1>
+            <p>Kabar Santri dan Jadwal Terkini</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">BERANDA</a></li>
+            <li><a href="https://sites.google.com/view/al-utsmani/home">INFORMASI TENTANG PESANTREN</a></li>
+            <li><a href="Untitled-2.html">KEGIATAN SANTRI</a></li>
+            <li><a href="https://alutsmani.github.io/">PENDAFTARAN SANTRI BARU</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <section class="custom-section">
+            <h2>Selamat Datang di Portal Informasi Resmi</h2>
+            <p>
+                Asalamu'alaikum Warahmatullahi Wabarakatuh. Silakan jelajahi informasi terbaru mengenai kegiatan harian santri dan agenda penting pesantren.
+            </p>
+            <a href="https://sites.google.com/view/psb-alutsmani?authuser=0" class="button">Informasi Pendaftaran!</a>
+        </section>
+        
+        <section class="agenda-list">
+            <h2>📅 Jadwal & Agenda Kegiatan</h2>
+
+            <div class="agenda-item">
+                <div class="agenda-photo">
+                    <img src="img\5.jpeg" alt="Foto Santri Sedang Menghafal">
+                </div>
+                <div class="agenda-content">
+                    <h4>Ujian Mid-Semester Hifzhul Qur'an</h4>
+                    <p class="agenda-meta">
+                        <span>🗓️ Tanggal: 15 - 20 Desember 2025</span>
+                        <span>⏰ Waktu: 07.30 - 11.00 WIB</span>
+                    </p>
+                    <a href="Untitled-1.html" style="font-size: 0.9em; color: #008080;">Lihat detail...</a>
+                </div>
+           
+
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Pesantren Salafiyah Al-Utsmani. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+
+</html>
